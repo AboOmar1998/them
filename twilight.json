@@ -885,7 +885,29 @@
             "title": "صورة كبيرة",
             "icon": "sicon-store",
             "path": "home.big",
-            "fields": []
+            "fields": [
+                {
+                    "id": "title",
+                    "type": "static",
+                    "format": "title",
+                    "label": "Title",
+                    "value": null,
+                    "variant": "h2",
+                    "icon": "sicon-format-text"
+                },
+                {
+                    "id": "image",
+                    "type": "string",
+                    "format": "image",
+                    "label": "Image",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": true
+                }
+            ]
         }
     ],
     "support_url": "https://salla.com/",
