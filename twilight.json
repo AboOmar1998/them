@@ -896,10 +896,10 @@
                     "icon": "sicon-format-text"
                 },
                 {
-                    "id": "image",
+                    "id": "image.ddiigg",
                     "type": "string",
                     "format": "image",
-                    "label": "Image",
+                    "label": "Image.big",
                     "description": null,
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
