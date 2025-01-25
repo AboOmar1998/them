@@ -675,13 +675,6 @@
                 {
                     "type": "static",
                     "format": "description",
-                    "id": "undefined_copy",
-                    "value": "<div ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1'></div>",
-                    "label": "undefined copy"
-                },
-                {
-                    "type": "static",
-                    "format": "description",
                     "id": "with-bg",
                     "value": "<div ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1'></div>"
                 },
