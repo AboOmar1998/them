@@ -666,172 +666,121 @@
                 }
             ]
         },
+       {
+    "key": "b89edc4a-ce0b-468f-8323-2da48147bb32",
+    "title": "صور مربعة (محسنة)",
+    "icon": "sicon-image",
+    "path": "home.enhanced-square-banners",
+    "fields": [
         {
-            "key": "b89edc4a-ce0b-468f-8323-2da48147bb32",
-            "title": "صور مربعة (محسنة)",
-            "icon": "sicon-image",
-            "path": "home.enhanced-square-banners",
-            "fields": [
+            "type": "static",
+            "format": "description",
+            "id": "with-bg",
+            "value": "<div><h6>معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1'></div>"
+        },
+        {
+            "id": "banners",
+            "type": "collection",
+            "format": "collection",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 6,
+            "label": "قائمة الصور",
+            "item_label": "صورة",
+            "description": "أضف ما بين 5 إلى 6 صور مربعة لعرضها في الواجهة.",
+            "value": [
                 {
-                    "type": "static",
-                    "format": "description",
-                    "id": "with-bg",
-                    "value": "<div ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1'></div>"
+                    "banners.image": "https://cdn.salla.sa/mQgZlG/pzOCEw10wCfXeVSpKnL0Ifd1O9ZkTfnZ17RkE14R.jpg",
+                    "banners.url": "https://example.com/category1",
+                    "banners.title": "تصفَّح حسب التصنيف 1",
+                    "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                 },
                 {
-                    "id": "banners",
-                    "type": "collection",
-                    "format": "collection",
+                    "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
+                    "banners.url": "https://example.com/category2",
+                    "banners.title": "تصفَّح حسب التصنيف 2",
+                    "banners.description": "اكتشف المنتجات بسهولة"
+                }
+            ],
+            "fields": [
+                {
+                    "type": "string",
+                    "icon": "sicon-image",
+                    "label": "صورة البنر",
+                    "id": "banners.image",
+                    "format": "image",
                     "required": true,
-                    "minLength": 6,
-                    "maxLength": 5,
-                    "label": "قائمة الصور",
-                    "item_label": "صورة",
-                    "value": [
+                    "description": "* المقاس المناسب للصورة هو 500×500 بكسل",
+                    "settings": {
+                        "height": 500,
+                        "width": 500
+                    }
+                },
+                {
+                    "type": "items",
+                    "icon": "sicon-link",
+                    "label": "الرابط",
+                    "id": "banners.url",
+                    "format": "variable-list",
+                    "searchable": true,
+                    "source": "custom",
+                    "sources": [
                         {
-                            "banners.image": "https://cdn.salla.sa/mQgZlG/pzOCEw10wCfXeVSpKnL0Ifd1O9ZkTfnZ17RkE14R.jpg",
-                            "banners.url": null,
-                            "banners.title": "تصفَّح حسب التصنيف",
-                            "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
+                            "label": "منتج",
+                            "key": "products",
+                            "value": "products"
                         },
                         {
-                            "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
-                            "banners.url": null,
-                            "banners.title": "تصفَّح حسب التصنيف",
-                            "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
+                            "label": "تصنيف",
+                            "key": "categories",
+                            "value": "categories"
                         },
                         {
-                            "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
-                            "banners.url": null,
-                            "banners.title": "تصفَّح حسب التصنيف",
-                            "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
+                            "label": "ماركة تجارية",
+                            "key": "brands",
+                            "value": "brands"
                         },
                         {
-                            "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
-                            "banners.url": null,
-                            "banners.title": "تصفَّح حسب التصنيف",
-                            "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
+                            "label": "صفحة تعريفية",
+                            "key": "pages",
+                            "value": "pages"
                         },
                         {
-                            "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
-                            "banners.url": null,
-                            "banners.title": "تصفَّح حسب التصنيف",
-                            "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
+                            "label": "رابط خارجي",
+                            "key": "custom",
+                            "value": "custom"
                         }
                     ],
-                    "fields": [
-                        {
-                            "type": "string",
-                            "icon": "sicon-image",
-                            "value": null,
-                            "label": "صورة البنر",
-                            "id": "banners.image",
-                            "format": "image",
-                            "required": true,
-                            "placeholder": null,
-                            "description": "* المقاس المناسب للصورة هو 640×427 بكسل",
-                            "settings": {
-                                "height": 1000,
-                                "width": 800
-                            }
-                        },
-                        {
-                            "type": "items",
-                            "icon": "sicon-link",
-                            "label": "الرابط",
-                            "id": "banners.url",
-                            "value": [],
-                            "description": null,
-                            "required": false,
-                            "format": "variable-list",
-                            "searchable": true,
-                            "source": "custom",
-                            "sources": [
-                                {
-                                    "label": "منتج",
-                                    "key": "products",
-                                    "value": "products"
-                                },
-                                {
-                                    "label": "تصنيف",
-                                    "key": "categories",
-                                    "value": "categories"
-                                },
-                                {
-                                    "label": "ماركة تجارية",
-                                    "key": "brands",
-                                    "value": "brands"
-                                },
-                                {
-                                    "label": "صفحة تعريفية",
-                                    "key": "pages",
-                                    "value": "pages"
-                                },
-                                {
-                                    "label": "مقالة",
-                                    "key": "blog_articles",
-                                    "value": "blog_articles"
-                                },
-                                {
-                                    "label": "تصنيف ضمن المدونة",
-                                    "key": "blog_categories",
-                                    "value": "blog_categories"
-                                },
-                                {
-                                    "label": "التخفيضات",
-                                    "key": "offers_link",
-                                    "value": "offers_link"
-                                },
-                                {
-                                    "label": "الماركات التجارية",
-                                    "key": "brands_link",
-                                    "value": "brands_link"
-                                },
-                                {
-                                    "label": "المدونة",
-                                    "key": "blog_link",
-                                    "value": "blog_link"
-                                },
-                                {
-                                    "label": "رابط خارجي",
-                                    "key": "custom",
-                                    "value": "custom"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "string",
-                            "icon": "sicon-format-text-alt",
-                            "label": "عنوان رئيسي",
-                            "multilanguage": true,
-                            "id": "banners.title",
-                            "value": null,
-                            "required": false,
-                            "format": "text",
-                            "description": "نص يتم إضافته على الصورة بنمط خط كبير",
-                            "placeholder": "أدخل النص هنا...",
-                            "hide": false,
-                            "minLength": 0,
-                            "maxLength": 100
-                        },
-                        {
-                            "type": "string",
-                            "icon": "sicon-typography",
-                            "label": "نص توضيحي",
-                            "multilanguage": true,
-                            "id": "banners.description",
-                            "value": null,
-                            "description": "نص يتم إضافته على الصورة بخط أصغر من العنوان الرئيسي",
-                            "format": "textarea",
-                            "required": false,
-                            "placeholder": "Your text here",
-                            "minLength": 0,
-                            "maxLength": 255
-                        }
-                    ]
+                    "required": false,
+                    "description": "اختياري: أضف رابطًا للصورة."
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "عنوان رئيسي",
+                    "id": "banners.title",
+                    "multilanguage": true,
+                    "format": "text",
+                    "required": false,
+                    "description": "نص يظهر كعنوان كبير على الصورة",
+                    "maxLength": 100
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-typography",
+                    "label": "نص توضيحي",
+                    "id": "banners.description",
+                    "multilanguage": true,
+                    "format": "textarea",
+                    "required": false,
+                    "description": "نص يظهر كشرح إضافي أسفل العنوان",
+                    "maxLength": 255
                 }
             ]
-        },
+        }
+    ]
+}
+
         {
             "key": "25f6cf26-a53f-4954-9b32-739b311b32c7",
             "title": "الماركات التجارية",
