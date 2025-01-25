@@ -671,14 +671,19 @@
             "title": "صور مربعة (محسنة)",
             "icon": "sicon-image",
             "path": "home.enhanced-square-banners",
-            "image": "https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1",
-            "is_default": true,
             "fields": [
                 {
                     "type": "static",
                     "format": "description",
+                    "id": "undefined_copy",
+                    "value": "<div ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1'></div>",
+                    "label": "undefined copy"
+                },
+                {
+                    "type": "static",
+                    "format": "description",
                     "id": "with-bg",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1'></div>"
+                    "value": "<div ><h6 >معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/square-images.png?v=1.1'></div>"
                 },
                 {
                     "id": "banners",
@@ -688,35 +693,35 @@
                     "minLength": 1,
                     "maxLength": 5,
                     "label": "قائمة الصور",
-                    "item_label": "صورة ",
+                    "item_label": "صورة",
                     "value": [
                         {
                             "banners.image": "https://cdn.salla.sa/mQgZlG/pzOCEw10wCfXeVSpKnL0Ifd1O9ZkTfnZ17RkE14R.jpg",
-                            "banners.url": "",
+                            "banners.url": null,
                             "banners.title": "تصفَّح حسب التصنيف",
                             "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                         },
                         {
                             "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
-                            "banners.url": "",
+                            "banners.url": null,
                             "banners.title": "تصفَّح حسب التصنيف",
                             "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                         },
                         {
                             "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
-                            "banners.url": "",
+                            "banners.url": null,
                             "banners.title": "تصفَّح حسب التصنيف",
                             "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                         },
                         {
                             "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
-                            "banners.url": "",
+                            "banners.url": null,
                             "banners.title": "تصفَّح حسب التصنيف",
                             "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                         },
                         {
                             "banners.image": "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
-                            "banners.url": "",
+                            "banners.url": null,
                             "banners.title": "تصفَّح حسب التصنيف",
                             "banners.description": "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                         }
@@ -730,7 +735,7 @@
                             "id": "banners.image",
                             "format": "image",
                             "required": true,
-                            "placeholder": "",
+                            "placeholder": null,
                             "description": "* المقاس المناسب للصورة هو 640×427 بكسل",
                             "settings": {
                                 "height": 427,
@@ -742,8 +747,8 @@
                             "icon": "sicon-link",
                             "label": "الرابط",
                             "id": "banners.url",
-                            "value": null,
-                            "description": "",
+                            "value": [],
+                            "description": null,
                             "required": false,
                             "format": "variable-list",
                             "searchable": true,
