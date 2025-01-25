@@ -690,7 +690,7 @@
                     "type": "collection",
                     "format": "collection",
                     "required": true,
-                    "minLength": 1,
+                    "minLength": 6,
                     "maxLength": 5,
                     "label": "قائمة الصور",
                     "item_label": "صورة",
@@ -738,8 +738,8 @@
                             "placeholder": null,
                             "description": "* المقاس المناسب للصورة هو 640×427 بكسل",
                             "settings": {
-                                "height": 427,
-                                "width": 640
+                                "height": 1000,
+                                "width": 800
                             }
                         },
                         {
