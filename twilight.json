@@ -879,6 +879,13 @@
                     "source": "brands"
                 }
             ]
+        },
+        {
+            "key": "e4d9edba-237d-4633-973b-f26cb1c60d66",
+            "title": "صورة كبيرة",
+            "icon": "sicon-store",
+            "path": "home.big",
+            "fields": []
         }
     ],
     "support_url": "https://salla.com/",
